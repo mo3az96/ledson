@@ -36,6 +36,9 @@ html[dir="ltr"] .lang-bar {
 .Sec-bar {
     margin-top: 16px;
 
+    @media (max-width: 767px) {
+        margin-top: 25px;
+    }
 }
 
 .logo {
@@ -191,7 +194,7 @@ html[dir="ltr"] .items {
     left: 50%;
     top: 25px;
     transform: translateX(-50%);
-    z-index: 9;
+    z-index: 10;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);

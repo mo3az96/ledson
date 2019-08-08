@@ -135,7 +135,7 @@
         border-radius: 5px;
         background-color: transparent;
         display: flex;
-        align-items: center;
+        line-height: 35px;
         justify-content: center;
         color: #fff;
         font-size: 18.67px;
@@ -154,8 +154,8 @@
             top: 0;
             left: 0;
             width: 150%;
-            height: 100%;
-            background: rgba($seccolor, 0.502);
+            height: 105%;
+            background: rgba(#fff, 1);
             z-index: -1;
             opacity: 0;
             -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
@@ -168,6 +168,8 @@
         }
 
         &:hover {
+            color: $maincolor;
+
             &:after {
                 opacity: 1;
                 -webkit-transform: rotate3d(0, 0, 1, 0deg);

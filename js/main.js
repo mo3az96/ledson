@@ -55,6 +55,9 @@ $(document).ready(function () {
     if ($(window).width() < 992) {
         $(".linksheading").addClass("accordion");
         $(".foot-links").addClass("panel");
+
+        $(".newsletter-head").addClass("accordion");
+        $(".news-body").addClass("panel");
     }
     var acc = document.getElementsByClassName("accordion");
     var i;

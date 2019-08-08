@@ -73,19 +73,24 @@ html[dir=ltr] .outscreen {
     transform: translateY(-4px);
   }
 }
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: Frutiger;
+  overflow-x: hidden;
 }
 body::-webkit-scrollbar {
   background-color: rgba(16, 16, 16, 0.2);
   width: 8px;
 }
 body::-webkit-scrollbar-thumb {
-  background-color: rgba(35, 61, 152, 0.5);
+  background-color: rgba(16, 16, 16, 0.7);
   border-radius: 25px;
 }
 body::-webkit-scrollbar-thumb:hover {
-  background-color: rgba(35, 61, 152, 0.7);
+  background-color: #101010;
 }
 body::-webkit-scrollbar-track {
   background-color: rgba(16, 16, 16, 0.2);
@@ -93,7 +98,7 @@ body::-webkit-scrollbar-track {
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: rgba(35, 61, 152, 0.5) rgba(16, 16, 16, 0.2);
+  scrollbar-color: rgba(16, 16, 16, 0.7) rgba(16, 16, 16, 0.2);
 }
 
 .container {
@@ -574,7 +579,7 @@ html[dir=ltr] .xs-nav .lang {
   border-radius: 5px;
   background-color: transparent;
   display: flex;
-  align-items: center;
+  line-height: 35px;
   justify-content: center;
   color: #fff;
   font-size: 18.67px;
@@ -593,8 +598,8 @@ html[dir=ltr] .xs-nav .lang {
   top: 0;
   left: 0;
   width: 150%;
-  height: 100%;
-  background: rgba(35, 61, 152, 0.502);
+  height: 105%;
+  background: white;
   z-index: -1;
   opacity: 0;
   -webkit-transform: rotate3d(0, 0, 1, -45deg) translate3d(0, -3em, 0);
@@ -603,6 +608,9 @@ html[dir=ltr] .xs-nav .lang {
   transform-origin: 0% 100%;
   -webkit-transition: -webkit-transform 0.5s, opacity 0.5s, background-color 0.5s;
   transition: transform 0.5s, opacity 0.5s, background-color 0.5s;
+}
+.main-slider .sliderbtn:hover {
+  color: #101010;
 }
 .main-slider .sliderbtn:hover:after {
   opacity: 1;
@@ -711,6 +719,11 @@ html[dir=ltr] .lang-bar .lang img {
 
 .Sec-bar {
   margin-top: 16px;
+}
+@media (max-width: 767px) {
+  .Sec-bar {
+    margin-top: 25px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -865,7 +878,7 @@ html[dir=ltr] .items {
   left: 50%;
   top: 25px;
   transform: translateX(-50%);
-  z-index: 9;
+  z-index: 10;
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
@@ -1124,11 +1137,6 @@ html[dir=ltr] .items {
   margin-bottom: 22px;
   display: block;
 }
-@media (max-width: 767px) {
-  .newsletter-head {
-    text-align: center;
-  }
-}
 
 .newsletter-info {
   font-size: 14px;
@@ -1154,6 +1162,7 @@ html[dir=ltr] .items {
     flex-direction: column;
     margin-top: 25px;
     padding-bottom: 20px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1247,6 +1256,12 @@ html[dir=ltr] .follw-head {
 html[dir=ltr] .tasawk img {
   margin-left: 6px;
   margin-right: auto;
+}
+
+@media (max-width: 767px) {
+  .payment {
+    margin: 15px 0;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

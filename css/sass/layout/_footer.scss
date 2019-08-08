@@ -75,9 +75,6 @@
     margin-bottom: 22px;
     display: block;
 
-    @media (max-width: 767px) {
-        text-align: center;
-    }
 }
 
 .newsletter-info {
@@ -102,6 +99,7 @@
         flex-direction: column;
         margin-top: 25px;
         padding-bottom: 20px;
+        margin-bottom: 10px;
     }
 }
 
@@ -192,5 +190,11 @@ html[dir="ltr"] .tasawk {
         margin-left: 6px;
         margin-right: auto;
 
+    }
+}
+
+.payment {
+    @media (max-width: 767px) {
+        margin: 15px 0;
     }
 }
