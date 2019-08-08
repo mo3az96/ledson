@@ -1,17 +1,4 @@
 $(document).ready(function () {
-    // // User Dropdown Menu
-    // $('.userbtn').click(function () {
-    //     $('.drop-menu').toggle();
-    // });
-    // $('body').click(function () {
-    //     $('.drop-menu').hide();
-    // });
-    // $(".drop-menu").click(function (e) {
-    //     e.stopPropagation();
-    // });
-    // $(".userbtn").click(function (e) {
-    //     e.stopPropagation();
-    // });
 
     // Mobile Side Menu 
     $('.menu-btn').click(function () {
@@ -83,4 +70,5 @@ $(document).ready(function () {
             }
         });
     }
+    AOS.init();
 });
