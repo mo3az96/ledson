@@ -1,0 +1,87 @@
+body {
+    font-family: Frutiger;
+
+    &::-webkit-scrollbar {
+        background-color: rgba($maincolor, 0.2);
+        width: 8px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: rgba($seccolor, 0.5);
+        border-radius: 25px;
+
+        &:hover {
+            background-color: rgba($seccolor, 0.7);
+        }
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: rgba($maincolor, 0.2);
+    }
+}
+
+html {
+    scrollbar-width: thin;
+    scrollbar-color: rgba($seccolor, 0.5) rgba($maincolor, 0.2);
+}
+
+.container {
+    max-width: 1170px;
+
+}
+
+a {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+    &:hover {
+        text-decoration: none;
+    }
+
+    &:active {
+        text-decoration: none;
+    }
+
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+input,
+button,
+textarea,
+.btn {
+    outline: none;
+    box-shadow: none;
+    border: none;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+
+    &:focus {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+        outline: none;
+        box-shadow: none;
+        border: none;
+    }
+}
+
+ul,
+ol,
+li,
+p,
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    padding: 0;
+}
