@@ -17,7 +17,7 @@ $(document).ready(function () {
         e.stopPropagation();
     });
     // Mobile Search 
-    $('.search-icon').click(function () {
+    $('.search-btn').click(function () {
         $('.search-pop').fadeIn(500);
         $('body').css("overflow", "hidden");
     });

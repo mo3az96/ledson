@@ -125,6 +125,10 @@ html[dir="ltr"] .news {
     left: 0;
     top: 0;
 
+    .search {
+        display: block;
+    }
+
     .closebtn {
         position: absolute;
         color: #777;
